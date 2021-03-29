@@ -1,0 +1,40 @@
+.employees {
+  margin-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: $alt-bg-color;
+  &-slider {
+    &__slide {
+      position: relative;
+      padding: 50px 20px 30px;
+      width: 33%;
+      background-color: #fff;
+      border-radius: 7px;
+      box-shadow: $image-shadow;
+      &-img {
+        position: absolute;
+        top: -40px;
+        width: 80px;
+        height: 80px;
+        border-radius: 100px;
+      }
+      &-name {
+        font-size: 20px;
+        font-weight: 700;
+        color: $accent-color;
+      }
+      &-profession {
+        margin-bottom: 25px;
+        font-size: 14px;
+        color: $inactive-color;
+        font-weight: 500;
+      }
+      &-text {
+        color: $inactive-color;
+        &:not(:last-child) {
+          margin-bottom: 18px;
+        }
+      }
+    }
+  }
+}
