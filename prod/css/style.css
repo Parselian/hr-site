@@ -408,13 +408,21 @@ section {
     width: 70%; } }
 
 @media (max-width: 992px) {
+  .button_alt {
+    display: block;
+    margin: auto; }
   .about__row {
     display: flex;
     flex-direction: column; }
   .about__subtitle {
     margin-bottom: 20px; }
   .about__info {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: center; }
+  .about__img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; }
   .advantages__block {
     width: 47%;
     display: flex;
@@ -471,15 +479,19 @@ section {
       bottom: -65%;
       width: 350px;
       filter: brightness(0.7); }
+  .about {
+    text-align: center; }
+    .about__wrap {
+      padding-left: 15px;
+      padding-right: 15px; }
   .employees {
     margin-bottom: 80px; }
   .steps {
-    margin-bottom: 80px; } }
+    margin-bottom: 80px; }
+  .contacts__form-footnote a {
+    width: 100%; } }
 
 @media (max-width: 576px) {
-  .button_alt {
-    display: block;
-    margin: auto; }
   .section__title {
     font-size: 28px; }
   .promo {
@@ -494,13 +506,6 @@ section {
       right: -20px;
       bottom: -70%;
       width: 275px; }
-  .about {
-    text-align: center; }
-    .about__wrap {
-      padding-left: 15px;
-      padding-right: 15px; }
-  .vacancy-info__title {
-    text-align: center; }
   .steps__block {
     margin-left: 20px;
     flex-direction: row;
@@ -569,7 +574,12 @@ section {
     .burger-menu__block:first-child {
       margin-bottom: 30px; }
     .burger-menu__block-text {
-      font-size: 22px; } }
+      font-size: 22px; }
+  .header__logo {
+    width: 80px; }
+  .header__phone-btn {
+    margin-right: 10px;
+    padding: 7px; } }
 
 @media (max-width: 350px) {
   .burger-menu {

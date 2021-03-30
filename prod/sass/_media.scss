@@ -30,6 +30,13 @@
 }
 
 @media (max-width: 992px) {
+  .button {
+    &_alt {
+      display: block;
+      margin: auto;
+    }
+  }
+
   .about {
     &__row {
       display: flex;
@@ -40,6 +47,12 @@
     }
     &__info {
       margin-bottom: 30px;
+      text-align: center;
+    }
+    &__img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
     }
   }
 
@@ -107,6 +120,7 @@
 }
 
 @media (max-width: 768px) {
+
   section {
     padding-bottom: 80px;
   }
@@ -147,6 +161,14 @@
     }
   }
 
+  .about {
+    text-align: center;
+    &__wrap {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
   .employees {
     margin-bottom: 80px;
   }
@@ -154,15 +176,20 @@
   .steps {
     margin-bottom: 80px;
   }
+
+  .contacts {
+    &__form {
+      &-footnote {
+        a {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
-  .button {
-    &_alt {
-      display: block;
-      margin: auto;
-    }
-  }
+
   .section {
       &__title {
         font-size: 28px;
@@ -184,20 +211,6 @@
       right: -20px;
       bottom: -70%;
       width: 275px;
-    }
-  }
-
-  .about {
-    text-align: center;
-    &__wrap {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  }
-
-  .vacancy-info {
-    &__title {
-      text-align: center;
     }
   }
 
@@ -321,6 +334,16 @@
           font-size: 22px;
         }
       }
+    }
+  }
+
+  .header {
+    &__logo {
+      width: 80px;
+    }
+    &__phone-btn {
+      margin-right: 10px;
+      padding: 7px;
     }
   }
 }
