@@ -1,0 +1,19 @@
+.promo {
+  padding-bottom: 0;
+  margin-bottom: 100px;
+  color: $alt-text-color;
+  background-color: $accent-color;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-size: 52px;
+    line-height: 1.2;
+  }
+  &__subtitle {
+    margin-bottom: 40px;
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,27 @@
+.header {
+  margin-bottom: 140px;
+  padding-top: 15px;
+  color: $alt-text-color;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__menu {
+    &-item {
+      font-size: 18px;
+      color: $alt-text-color;
+      text-decoration: none;
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
+  &__phone-btn {
+    text-decoration: none;
+  }
+}
