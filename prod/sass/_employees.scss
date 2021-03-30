@@ -1,16 +1,18 @@
 .employees {
   margin-bottom: 100px;
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   background-color: $alt-bg-color;
   &-slider {
+    position: relative;
     &__slide {
       position: relative;
+      margin: 45px 10px 20px 10px;
       padding: 50px 20px 30px;
       width: 33%;
       background-color: #fff;
       border-radius: 7px;
-      box-shadow: $image-shadow;
+      box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
       &-img {
         position: absolute;
         top: -40px;

@@ -53,6 +53,30 @@ section {
   height: 50px;
 }
 
+.slider {
+  &-arrow {
+    position: absolute;
+    bottom: -20px;
+    width: 30px;
+    height: 15px;
+    transition: .2s;
+    fill: $inactive-color;
+    cursor: pointer;
+    &:hover, &:focus {
+      fill: $accent-color;
+    }
+
+    &_prev {
+      left: calc(50% - 55px);
+      transform: rotate(-180deg) translateX(-50%);
+    }
+
+    &_next {
+      left: calc(50% + 15px);
+    }
+  }
+}
+
 .button {
   padding: 12px 15px;
   font-size: 18px;
@@ -62,11 +86,13 @@ section {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
+  cursor: pointer;
   &_alt {
     background-color: $accent-color;
     color: $alt-text-color;
   }
 }
+
 
 @import 'burger';
 @import 'header';
@@ -80,6 +106,7 @@ section {
 @import 'steps';
 @import 'contacts';
 @import 'footer';
+@import 'popup';
 @import 'media';
 
 

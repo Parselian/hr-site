@@ -1,6 +1,7 @@
 <?php
     $phone_link = '+79999999999';
-    $phone_format = '+7 (999) 999-99-99'
+    $phone_format = '+7 (999) 999-99-99';
+    $companyName = "Название компании";
 ?>
 
 <!doctype html>
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
@@ -99,7 +101,7 @@
         <div class="promo-info">
             <h1 class="promo__title">Работа сервисным <span class="line-break">инженером в СПб</span></h1>
             <div class="promo__subtitle">С зарплатой от 80 000 руб./мес.</div>
-            <button class="button promo-button">Оставить заявку</button>
+            <button class="button promo-button open-popup">Оставить заявку</button>
         </div>
         <img src="./images/promo-man.png" alt="мужик" class="promo__img">
     </div>
@@ -109,7 +111,7 @@
     <div class="container about__wrap">
         <div class="row about__row">
             <div class="col-xl-6 col-lg-6 col-12 about__info">
-                <h2 class="about__title">"Название фирмы"</h2>
+                <h2 class="about__title"><?= $companyName; ?></h2>
                 <div class="about__subtitle">Профессиональный ремонт компьютерной техники</div>
                 <p class="about__text">
                     Наша группа компаний входит в тройку крупнейших сервисных центров по ремонту телефонов, компьютерной и бытовой техники. Принимаем более 4000 заказов ежемесячно. Открыты филиалы в 5 регионах России.
@@ -210,7 +212,7 @@
                     <li class="vacancy-info__list-item">— У тебя есть желание зарабатывать, учиться и развиваться.</li>
                 </ul>
 
-                <button class="button button_alt">Позвоните мне</button>
+                <button class="button button_alt open-popup">Позвоните мне</button>
             </div>
         </div>
     </div>
@@ -221,6 +223,8 @@
         <h2 class="section__title">Актуальные вакансии мастера по ремонту Apple в России</h2>
 
         <div class="vacancies__list">
+            <img src="./images/vacancy.jpg" alt="Вакансия" class="vacancies__list-item">
+            <img src="./images/vacancy.jpg" alt="Вакансия" class="vacancies__list-item">
             <img src="./images/vacancy.jpg" alt="Вакансия" class="vacancies__list-item">
             <img src="./images/vacancy.jpg" alt="Вакансия" class="vacancies__list-item">
             <img src="./images/vacancy.jpg" alt="Вакансия" class="vacancies__list-item">
@@ -251,6 +255,48 @@
                     Доход: <span class="text_bold">150 000 руб./мес.</span>
                 </div>
             </div>
+            <div class="employees-slider__slide">
+                <img src="./images/engineers-photo.jpg" alt="инженер" class="employees-slider__slide-img">
+                <h3 class="employees-slider__slide-name">Поп артёмов</h3>
+                <div class="employees-slider__slide-profession">Старший сервис-инженер</div>
+                <div class="employees-slider__slide-text">
+                    <span class="text_bold">Возраст:</span> 29 лет
+                </div>
+                <div class="employees-slider__slide-text">
+                    <span class="text_bold">Деятельность:</span> ремонт техники Apple со стажем работы более 4-х лет
+                </div>
+                <div class="employees-slider__slide-text">
+                    Доход: <span class="text_bold">150 000 руб./мес.</span>
+                </div>
+            </div>
+            <div class="employees-slider__slide">
+                <img src="./images/engineers-photo.jpg" alt="инженер" class="employees-slider__slide-img">
+                <h3 class="employees-slider__slide-name">Поп артёмов</h3>
+                <div class="employees-slider__slide-profession">Старший сервис-инженер</div>
+                <div class="employees-slider__slide-text">
+                    <span class="text_bold">Возраст:</span> 29 лет
+                </div>
+                <div class="employees-slider__slide-text">
+                    <span class="text_bold">Деятельность:</span> ремонт техники Apple со стажем работы более 4-х лет
+                </div>
+                <div class="employees-slider__slide-text">
+                    Доход: <span class="text_bold">150 000 руб./мес.</span>
+                </div>
+            </div>
+            <div class="employees-slider__slide">
+                <img src="./images/engineers-photo.jpg" alt="инженер" class="employees-slider__slide-img">
+                <h3 class="employees-slider__slide-name">Поп артёмов</h3>
+                <div class="employees-slider__slide-profession">Старший сервис-инженер</div>
+                <div class="employees-slider__slide-text">
+                    <span class="text_bold">Возраст:</span> 29 лет
+                </div>
+                <div class="employees-slider__slide-text">
+                    <span class="text_bold">Деятельность:</span> ремонт техники Apple со стажем работы более 4-х лет
+                </div>
+                <div class="employees-slider__slide-text">
+                    Доход: <span class="text_bold">150 000 руб./мес.</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -258,7 +304,7 @@
 <section class="team">
     <div class="container">
         <div class="row about__row">
-            <div class="col-xl-6 col-lg-6 col-12 about__info">
+            <div class="col-xl-5 col-lg-5 col-12 about__info">
                 <h2 class="about__title team__title">Дружная команда, вдохновляющая на успех</h2>
 
                 <p class="about__text">
@@ -269,8 +315,12 @@
                 </p>
             </div>
 
-            <div class="col-xl-6 col-lg-6 col-12">
-                <img src="./images/team.jpg" alt="Команда" class="about__img">
+            <div class="col-xl-7 col-lg-7 col-12 team__slider">
+                <img src="./images/team_1.jpg" alt="Команда" class="about__img">
+                <img src="./images/team_2.jpg" alt="Команда" class="about__img">
+                <img src="./images/team_3.png" alt="Команда" class="about__img">
+                <img src="./images/team_4.jpg" alt="Команда" class="about__img">
+                <img src="./images/team_5.jpg" alt="Команда" class="about__img">
             </div>
         </div>
     </div>
@@ -314,18 +364,18 @@
                     <div class="contacts__form-inputs">
                         <div class="contacts__form-input">
                             <label for="contacts__form-name" class="contacts__form-label">Ваше имя:</label>
-                            <input id="contacts__form-name" type="text" name="user_name" >
+                            <input id="contacts__form-name" type="text" name="user_name" placeholder="Ваше имя">
                         </div>
 
                         <div class="contacts__form-input">
                             <label for="contacts__form-phone" class="contacts__form-label">Ваш телефон:</label>
-                            <input id="contacts__form-phone" type="text" name="user_phone" required>
+                            <input id="contacts__form-phone" type="text" name="user_phone" placeholder="+7 (999) 999-99-99" required>
                         </div>
                     </div>
 
                     <button class="button button_alt">Позвоните мне</button>
                     <div class="contacts__form-footnote">
-                        Нажимая кнопку “Позвоните мне” я соглашаюсь с <a href="#">политикой обработки персональных данных</a>
+                        Нажимая кнопку “Позвоните мне” я соглашаюсь с <a href="./politika.html" target="_blank">политикой обработки персональных данных</a>
                     </div>
                 </form>
             </div>
@@ -337,6 +387,7 @@
 </section>
 
 <footer class="footer">
+
     <div class="container footer__wrap">
         <svg class="logo footer__logo">
             <use xlink:href="./images/stack/sprite.svg#logo_alt"></use>
@@ -359,17 +410,102 @@
                 </svg>
                 <div class="footer__contact-col">
                     <h4 class="footer__contact-title">Наш телефон</h4>
-                    <a href="<?= $phone_link?>" class="footer__contact-text footer__contact-phone"><?= $phone_format?></a>
+                    <a href="tel:<?= $phone_link?>" class="footer__contact-text footer__contact-phone"><?= $phone_format?></a>
                 </div>
             </div>
         </div>
 
         <div class="footer__misc">
-            <div class="footer__copyright">"Название" - все права защищены</div>
-            <a href="#" class="footer__policy">Политика конфиденциальности</a>
+            <div class="footer__copyright"><?= $companyName; ?> - все права защищены</div>
+            <a href="./politika.html" class="footer__policy" target="_blank">Политика конфиденциальности</a>
         </div>
     </div>
 </footer>
 
+<div class="popup popup_call-master">
+    <div class="container popup__wrap">
+        <form action="/configs/mail.php" method="post" class="popup__form">
+            <h2 class="popup__form-title">
+                Вызвать мастера
+            </h2>
+            <div class="popup__form-subtitle">
+                Введите свои данные ниже, и наш менеджер перезвонит Вам для уточнения деталей.
+            </div>
+            <div class="popup__form-close">&times;</div>
+            <div class="popup__form-input-wrap">
+                <label for="popup-name" class="popup__form-label">Ваше имя:</label>
+                <input id="popup-name" type="text" name="user_name" class="popup__form-input" placeholder="Ваше имя">
+            </div>
+            <div class="popup__form-input-wrap">
+                <label for="popup-phone" class="popup__form-label">Ваш телефон:</label>
+                <input id="popup-phone" type="text" name="user_phone" class="popup__form-input popup__form-input-phone" placeholder="+7 (999) 999 99-99" required>
+            </div>
+            <button type="submit" class="popup__form-button">Оставить заявку</button>
+            <div class="popup__footnote">
+                Нажимая на кнопку «Оставить заявку», я даю <a href="./politika.html" target="_blank">согласие на обработку персональных данных.</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="popup popup-thanks">
+    <div class="container popup__wrap">
+        <div class="popup__form">
+            <h2 class="popup__form-title">
+                Спасибо
+            </h2>
+            <div class="popup__form-subtitle">
+                Оператор свяжется с вами через 5 минут.
+            </div>
+            <div class="popup__form-close">&times;</div>
+            <button class="popup__form-button popup-thanks__form-btn">Закрыть</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./jquery-masked-input.min.js"></script>
+<script src="./script.js"></script>
+<script>
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            center: [59.924726, 30.317046],
+            zoom: 13
+        });
+
+        const glyphServicesParams = {
+            iconLayout: 'default#image',
+            iconImageHref: './images/svg/placeholder.svg',
+            iconImageSize: [40, 40]
+        }
+
+        let servicePlacemarks = {
+            sadovaya: new ymaps.Placemark([59.924726, 30.317046], {
+                balloonContentHeader: 'Наш офис на м. Садовая',
+                balloonContentBody: 'Позвоните нам: <a href="tel:<?=$phone_link?>"><?=$phone_format?></a>'
+            }, glyphServicesParams),
+        };
+
+        myMap.geoObjects.add(servicePlacemarks['sadovaya']);
+
+
+        myMap.events.add('click', () => {
+            for (let placemark in servicePlacemarks) {
+                servicePlacemarks[placemark].balloon.close();
+            }
+            for (let placemark in engineerPlacemarks) {
+                engineerPlacemarks[placemark].balloon.close();
+            }
+        });
+
+        if (document.documentElement.clientWidth < 992) {
+            myMap.behaviors.disable(['drag']);
+        }
+    }
+</script>
 </body>
 </html>

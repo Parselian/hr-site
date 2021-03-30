@@ -4,11 +4,14 @@
     justify-content: space-between;
     align-items: center;
     &-item {
-      width: 30%;
-      box-shadow: $image-shadow;
+      margin: 15px 30px;
+      //width: 30%;
+      box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
       border-radius: 7px;
-      &:not(:last-child) {
-        margin-right: 5%;
+    }
+
+    .slick {
+      &-list {
       }
     }
   }

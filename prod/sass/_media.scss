@@ -18,6 +18,12 @@
     }
   }
 
+  .team {
+    &__title {
+      font-size: 30px;
+    }
+  }
+
   .steps {
     &__block {
       &s {
@@ -85,6 +91,44 @@
           &__info {
             order: -1
           }
+        }
+      }
+    }
+  }
+
+  .team {
+    &__title {
+      font-size: 42px;
+    }
+
+    &__slider {
+      &-arrow {
+        &_prev {
+          left: calc(50% - 55px);
+          right: unset;
+          bottom: -40px;
+        }
+        &_next {
+          left: calc(50% + 15px);
+          right: unset;
+          bottom: -40px;
+        }
+      }
+
+      .slick {
+        &-list {
+          padding-left: 60px;
+          padding-right: 60px;
+          &:after {
+            display: none;
+          }
+        }
+
+        &-slide {
+          opacity: 0.3;
+        }
+        &-active {
+          opacity: 1;
         }
       }
     }
@@ -173,6 +217,21 @@
     margin-bottom: 80px;
   }
 
+  .team {
+    &__slider {
+      .slick {
+        &-list {
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+
+        &-slide {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
   .steps {
     margin-bottom: 80px;
   }
@@ -211,6 +270,20 @@
       right: -20px;
       bottom: -70%;
       width: 275px;
+    }
+  }
+
+  .team {
+    &__slider {
+      .slick {
+        &-list {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        &-slide {
+          margin-right: 0;
+        }
+      }
     }
   }
 
@@ -258,6 +331,20 @@
       }
     }
   }
+
+  .popup {
+    &__form {
+      padding: 30px 20px 20px;
+      max-width: 100%;
+      &-subtitle {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      &-button {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -293,6 +380,13 @@
     &__title {
       margin-bottom: 5px;
       font-size: 32px;
+    }
+  }
+
+  .team {
+    &__title {
+      font-size: 32px;
+      margin-bottom: 5px;
     }
   }
 
