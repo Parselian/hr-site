@@ -224,10 +224,11 @@
 
         <div class="vacancies__list">
             <img src="./images/vacancy.jpg" alt="Вакансия" class="vacancies__list-item">
+            <img src="./images/vacancy_2.jpg" alt="Вакансия" class="vacancies__list-item">
+            <img src="./images/vacancy_3.jpg" alt="Вакансия" class="vacancies__list-item">
             <img src="./images/vacancy.jpg" alt="Вакансия" class="vacancies__list-item">
-            <img src="./images/vacancy.jpg" alt="Вакансия" class="vacancies__list-item">
-            <img src="./images/vacancy.jpg" alt="Вакансия" class="vacancies__list-item">
-            <img src="./images/vacancy.jpg" alt="Вакансия" class="vacancies__list-item">
+            <img src="./images/vacancy_2.jpg" alt="Вакансия" class="vacancies__list-item">
+            <img src="./images/vacancy_3.jpg" alt="Вакансия" class="vacancies__list-item">
         </div>
     </div>
 </section>
