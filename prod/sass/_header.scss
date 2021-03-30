@@ -17,6 +17,10 @@
       }
     }
   }
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
   &__phone-btn {
     text-decoration: none;
   }

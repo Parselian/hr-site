@@ -51,6 +51,78 @@ section {
     background-color: #00b2ff;
     color: #fff; }
 
+.burger-btn {
+  display: none;
+  width: 30px;
+  cursor: pointer; }
+  .burger-btn span {
+    display: block;
+    width: 100%;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    height: 4px;
+    background: #fff;
+    transition: all .3s;
+    position: relative; }
+  .burger-btn span + span {
+    margin-top: 7px; }
+  .burger-btn .active span:nth-child(1) {
+    animation: ease .7s top forwards; }
+  .burger-btn .not-active span:nth-child(1) {
+    animation: ease .7s top-2 forwards; }
+  .burger-btn .active span:nth-child(2) {
+    animation: ease .7s scaled forwards; }
+  .burger-btn .not-active span:nth-child(2) {
+    animation: ease .7s scaled-2 forwards; }
+  .burger-btn .active span:nth-child(3) {
+    animation: ease .7s bottom forwards; }
+  .burger-btn .not-active span:nth-child(3) {
+    animation: ease .7s bottom-2 forwards; }
+
+.burger-menu {
+  position: fixed;
+  display: none;
+  left: 50%;
+  z-index: 99999999;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(-50%);
+  background-color: #fff;
+  overflow: hidden; }
+  .burger-menu .header {
+    position: sticky;
+    display: block; }
+    .burger-menu .header__phone-btn {
+      color: #fff;
+      background-color: #00b2ff; }
+    .burger-menu .header .burger-btn span {
+      background-color: #969696;
+      box-shadow: 0 2px 10px 0 rgba(255, 255, 255, 0.3) !important; }
+  .burger-menu__list {
+    margin-bottom: 40px; }
+    .burger-menu__list-item {
+      padding: 10px 5px;
+      display: block;
+      color: #000;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
+  .burger-menu__contacts {
+    margin-bottom: 40px; }
+  .burger-menu__block:first-child {
+    margin-bottom: 40px; }
+  .burger-menu__block-title {
+    font-weight: 300;
+    font-size: 14px; }
+  .burger-menu__block-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00b2ff; }
+  .burger-menu__button {
+    padding: 15px 70px;
+    font-size: 22px; }
+
 .header {
   margin-bottom: 140px;
   padding-top: 15px;
@@ -65,6 +137,9 @@ section {
     text-decoration: none; }
     .header__menu-item:not(:last-child) {
       margin-right: 15px; }
+  .header__contacts {
+    display: flex;
+    align-items: center; }
   .header__phone-btn {
     text-decoration: none; }
 
@@ -83,10 +158,6 @@ section {
   .promo__subtitle {
     margin-bottom: 40px;
     font-size: 32px; }
-
-.about__wrap {
-  padding-left: 0;
-  padding-right: 0; }
 
 .about__title {
   font-size: 42px;
@@ -142,6 +213,7 @@ section {
   margin-bottom: 5px; }
 
 .vacancy-info__img {
+  width: 100%;
   border-radius: 7px;
   -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
@@ -375,11 +447,18 @@ section {
     margin-bottom: 50px; } }
 
 @media (max-width: 768px) {
+  section {
+    padding-bottom: 80px; }
+  .burger-btn {
+    display: block; }
   .header {
     margin-bottom: 80px; }
     .header__menu {
       display: none; }
+    .header__phone-btn {
+      margin-right: 20px; }
   .promo {
+    margin-bottom: 80px;
     height: 580px; }
     .promo-info {
       z-index: 1; }
@@ -391,9 +470,16 @@ section {
       right: -100px;
       bottom: -65%;
       width: 350px;
-      filter: brightness(0.7); } }
+      filter: brightness(0.7); }
+  .employees {
+    margin-bottom: 80px; }
+  .steps {
+    margin-bottom: 80px; } }
 
 @media (max-width: 576px) {
+  .button_alt {
+    display: block;
+    margin: auto; }
   .section__title {
     font-size: 28px; }
   .promo {
@@ -408,9 +494,13 @@ section {
       right: -20px;
       bottom: -70%;
       width: 275px; }
-  .about__wrap {
-    padding-left: 15px;
-    padding-right: 15px; }
+  .about {
+    text-align: center; }
+    .about__wrap {
+      padding-left: 15px;
+      padding-right: 15px; }
+  .vacancy-info__title {
+    text-align: center; }
   .steps__block {
     margin-left: 20px;
     flex-direction: row;
@@ -469,3 +559,21 @@ section {
     .contacts__form-input:not(:last-child) {
       margin-bottom: 10px;
       margin-right: 0; } }
+
+@media (max-width: 405px) {
+  .burger-menu {
+    padding-top: 0;
+    overflow: auto; }
+    .burger-menu__list {
+      margin-bottom: 30px; }
+    .burger-menu__block:first-child {
+      margin-bottom: 30px; }
+    .burger-menu__block-text {
+      font-size: 22px; } }
+
+@media (max-width: 350px) {
+  .burger-menu {
+    padding-bottom: 30px; }
+    .burger-menu__button {
+      width: 100%;
+      font-size: 18px; } }

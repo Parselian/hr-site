@@ -22,6 +22,54 @@
 </head>
 <body>
 
+<div class="burger-menu">
+    <header class="header">
+        <div class="container header__wrap">
+            <svg class="logo header__logo">
+                <use xlink:href="./images/stack/sprite.svg#logo_alt"></use>
+            </svg>
+
+            <nav class="header__menu">
+                <a href="#about" class="header__menu-item">О нас</a>
+                <a href="#advantages" class="header__menu-item">Преимущества</a>
+                <a href="#contacts" class="header__menu-item">Где находимся</a>
+            </nav>
+
+            <div class="header__contacts">
+                <a href="tel:<?= $phone_link?>" class="button header__phone-btn"><?= $phone_format?></a>
+
+                <div class="burger-btn not-active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container burger-menu__wrap">
+        <nav class="burger-menu__list">
+            <a href="#about" class="burger-menu__list-item">О нас</a>
+            <a href="#advantages" class="burger-menu__list-item">Преимущества</a>
+            <a href="#contacts" class="burger-menu__list-item">Где находимся</a>
+        </nav>
+        <div class="burger-menu__contacts">
+            <div class="burger-menu__block">
+                <h4 class="burger-menu__block-title">Наш телефон:</h4>
+                <a href="tel:<?= $phone_link?>" class="burger-menu__block-text"><?= $phone_format?></a>
+            </div>
+            <div class="burger-menu__block">
+                <h4 class="burger-menu__block-title">Мы работаем:</h4>
+                <div class="burger-menu__block-text">
+                    С 8:00 до 23:00
+                    <span class="line-break">Без выходных</span>
+                </div>
+            </div>
+        </div>
+        <button class="button button_alt burger-menu__button">Оставить заявку</button>
+    </div>
+</div>
+
 <section class="promo">
     <header class="header">
         <div class="container header__wrap">
@@ -30,12 +78,20 @@
             </svg>
 
             <nav class="header__menu">
-                <a href="#" class="header__menu-item">О нас</a>
-                <a href="#" class="header__menu-item">Преимущества</a>
-                <a href="#" class="header__menu-item">Где находимся</a>
+                <a href="#about" class="header__menu-item">О нас</a>
+                <a href="#advantages" class="header__menu-item">Преимущества</a>
+                <a href="#contacts" class="header__menu-item">Где находимся</a>
             </nav>
 
-            <a href="tel:<?= $phone_link?>" class="button header__phone-btn"><?= $phone_format?></a>
+            <div class="header__contacts">
+                <a href="tel:<?= $phone_link?>" class="button header__phone-btn"><?= $phone_format?></a>
+
+                <div class="burger-btn not-active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -49,7 +105,7 @@
     </div>
 </section>
 
-<section class="about">
+<section id="about" class="about">
     <div class="container about__wrap">
         <div class="row about__row">
             <div class="col-xl-6 col-lg-6 col-12 about__info">
@@ -70,7 +126,7 @@
     </div>
 </section>
 
-<section class="advantages">
+<section id="advantages" class="advantages">
     <div class="container advantages__wrap">
         <h2 class="section__title advantages__title">Делаем всё, чтобы Вы могли комфортно работать и достойно зарабатывать</h2>
 
@@ -247,7 +303,7 @@
     </div>
 </section>
 
-<section class="contacts">
+<section id="contacts" class="contacts">
     <div class="container">
         <div class="row contacts__row">
             <div class="col-12 col-xl-6 col-lg-6 contacts__info">

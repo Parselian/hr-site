@@ -107,13 +107,28 @@
 }
 
 @media (max-width: 768px) {
+  section {
+    padding-bottom: 80px;
+  }
+
+  .burger {
+    &-btn {
+      display: block;
+    }
+  }
+
   .header {
     margin-bottom: 80px;
     &__menu {
       display: none;
     }
+    &__phone-btn {
+      margin-right: 20px;
+    }
   }
+
   .promo {
+    margin-bottom: 80px;
     height: 580px;
     &-info {
       z-index: 1;
@@ -131,14 +146,29 @@
       filter: brightness(0.7);
     }
   }
+
+  .employees {
+    margin-bottom: 80px;
+  }
+
+  .steps {
+    margin-bottom: 80px;
+  }
 }
 
 @media (max-width: 576px) {
+  .button {
+    &_alt {
+      display: block;
+      margin: auto;
+    }
+  }
   .section {
       &__title {
         font-size: 28px;
       }
   }
+
   .promo {
     text-align: center;
     &__wrap {
@@ -158,9 +188,16 @@
   }
 
   .about {
+    text-align: center;
     &__wrap {
       padding-left: 15px;
       padding-right: 15px;
+    }
+  }
+
+  .vacancy-info {
+    &__title {
+      text-align: center;
     }
   }
 
@@ -263,6 +300,38 @@
           margin-right: 0;
         }
         max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 405px) {
+  .burger {
+    &-menu {
+      padding-top: 0;
+      overflow: auto;
+      &__list {
+        margin-bottom: 30px;
+      }
+      &__block {
+        &:first-child {
+          margin-bottom: 30px;
+        }
+        &-text {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .burger {
+    &-menu {
+      padding-bottom: 30px;
+      &__button {
+        width: 100%;
+        font-size: 18px;
       }
     }
   }
